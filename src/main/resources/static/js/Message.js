@@ -12,7 +12,7 @@ app.controller('MessController', function ($scope, $rootScope, $window, $http, $
 		var height = 600;
 		var left = (window.innerWidth - width) / 2;
 		var top = (window.innerHeight - height) / 2;
-		window.open("http://127.0.0.1:5501/#!/videocall/" + userId, '_blank', 'width=' + width + ',height=' + height + ',left=' + left + ',top=' + top);
+		window.open("http://127.0.0.1:5500/src/main/resources/static/Index.html#!/videocall/" + userId, '_blank', 'width=' + width + ',height=' + height + ',left=' + left + ',top=' + top);
 
 	};
 	angular.element(document).ready(function () {

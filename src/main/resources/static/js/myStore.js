@@ -643,12 +643,12 @@ app.controller(
         console.error("Lỗi: " + error);
       });
     }
+    //Load từ đầu
+    if ($rootScope.checkMystore === 1) {
+      $scope.page($rootScope.currentPageMyStore);
+    } else if ($rootScope.checkMystore === 2) {
+      $scope.pagePending($rootScope.currentPagePending)
+    } else if ($rootScope.checkMystore === 3) {
+      $scope.tabsReport();
+    }
   });
-//Load từ đầu
-if ($rootScope.checkMystore === 1) {
-  $scope.page($rootScope.currentPageMyStore);
-} else if ($rootScope.checkMystore === 2) {
-  $scope.pagePending($rootScope.currentPagePending)
-} else if ($rootScope.checkMystore === 3) {
-  $scope.tabsReport();
-}
